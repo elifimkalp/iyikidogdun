@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function (event) {
+  const startMessage = document.getElementById("startMessage");
+  const animationContainer = document.querySelector(".container");
+
+  startMessage.addEventListener("click", function () {
+    startMessage.style.display = "none"; // Başlangıç yazısını gizle
+
+    fetchData(); // Animasyonları başlat
+  });
+});
+
 const fetchData = () => {
   fetch("customize.json")
     .then((data) => data.json())
@@ -937,6 +948,3 @@ const animationTimeline = () => {
     tl.restart();
   });
 };
-
-// Run fetch and animation in sequence
-fetchData();

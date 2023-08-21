@@ -17,6 +17,18 @@ body {
   overflow: hidden;
 }
 
+.wrapper {
+  text-align: center;
+}
+
+.button {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  top: 20vh;
+  background-color: red;
+}
+
 .container div.six {
   top: 10vh;
   z-index: 1;
