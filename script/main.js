@@ -58,143 +58,73 @@ const animationTimeline = () => {
   tl.to(".container", 0.1, {
     visibility: "visible",
   })
-    .from(".one", 0.7, {
-      opacity: 0,
-      y: 10,
-    })
-    .from(".two", 0.4, {
+
+    .from(".zero", 0.7, {
       opacity: 0,
       y: 10,
     })
     .to(
-      ".one",
+      ".zero",
       0.7,
       {
         opacity: 0,
         y: 10,
       },
-      "+=2.5"
+      "+=0.1"
     )
-    .to(
-      ".two",
-      0.7,
-      {
-        opacity: 0,
-        y: 10,
-      },
-      "-=1"
-    )
-    .from(".three", 0.7, {
+    .from(".zero2", 0.7, {
       opacity: 0,
       y: 10,
-      // scale: 0.7
     })
     .to(
-      ".three",
+      ".zero2",
       0.7,
       {
         opacity: 0,
         y: 10,
       },
-      "+=2"
+      "+=0.1"
     )
-    .from(".four", 0.7, {
-      scale: 0.2,
+    .from(".zero3", 0.7, {
       opacity: 0,
+      y: 10,
     })
-    .from(".fake-btn", 0.3, {
-      scale: 0.2,
+    .to(
+      ".zero3",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=0.1"
+    )
+    .from(".zero4", 0.7, {
       opacity: 0,
-    })
-    .staggerTo(
-      ".hbd-chatbox span",
-      0.5,
-      {
-        visibility: "visible",
-      },
-      0.05
-    )
-    .to(".fake-btn", 0.1, {
-      backgroundColor: "rgb(127, 206, 248)",
+      y: 10,
     })
     .to(
-      ".four",
-      0.5,
+      ".zero4",
+      0.7,
       {
-        scale: 0.2,
         opacity: 0,
-        y: -150,
+        y: 10,
       },
-      "+=0.7"
+      "+=0.1"
     )
-    .from(".idea-1", 0.7, ideaTextTrans)
-    .to(".idea-1", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-2", 0.7, ideaTextTrans)
-    .to(".idea-2", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-3", 0.7, ideaTextTrans)
-    .to(".idea-3 strong", 0.5, {
-      scale: 1.2,
-      x: 10,
-      backgroundColor: "rgb(21, 161, 237)",
-      color: "#fff",
+    .from(".zero5", 0.7, {
+      opacity: 0,
+      y: 10,
     })
-    .to(".idea-3", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(".idea-4", 0.7, ideaTextTrans)
-    .to(".idea-4", 0.7, ideaTextTransLeave, "+=1.5")
-    .from(
-      ".idea-5",
-      0.7,
-      {
-        rotationX: 15,
-        rotationZ: -10,
-        skewY: "-5deg",
-        y: 50,
-        z: 10,
-        opacity: 0,
-      },
-      "+=0.5"
-    )
     .to(
-      ".idea-5 .smiley",
+      ".zero5",
       0.7,
       {
-        rotation: 90,
-        x: 8,
-      },
-      "+=0.4"
-    )
-    .to(
-      ".idea-5",
-      0.7,
-      {
-        scale: 0.2,
         opacity: 0,
+        y: 10,
       },
-      "+=2"
+      "+=2.1"
     )
-    .staggerFrom(
-      ".idea-6 span",
-      0.8,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: 15,
-        ease: Expo.easeOut,
-      },
-      0.2
-    )
-    .staggerTo(
-      ".idea-6 span",
-      0.8,
-      {
-        scale: 3,
-        opacity: 0,
-        rotation: -15,
-        ease: Expo.easeOut,
-      },
-      0.2,
-      "+=1"
-    )
+
     .staggerFromTo(
       ".baloons img",
       2.5,
@@ -208,8 +138,9 @@ const animationTimeline = () => {
       },
       0.2
     )
+
     .from(
-      ".lydia-dp",
+      ".elif-hat",
       0.5,
       {
         scale: 3.5,
@@ -282,6 +213,711 @@ const animationTimeline = () => {
       y: 30,
       zIndex: "-1",
     })
+
+    .from(
+      ".one",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".two",
+      0.4,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .to(
+      ".one",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=4.5"
+    )
+    .to(
+      ".two",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "-=1"
+    )
+
+    .from(".four", 0.7, {
+      scale: 0.2,
+      opacity: 0,
+    })
+    .from(".fake-btn", 0.3, {
+      scale: 0.2,
+      opacity: 0,
+    })
+
+    .staggerTo(
+      ".hbd-chatbox span",
+      0.5,
+      {
+        visibility: "visible",
+      },
+      0.05
+    )
+    .to(".fake-btn", 0.1, {
+      backgroundColor: "rgb(127, 206, 248)",
+    })
+    .to(
+      ".four",
+      0.5,
+      {
+        scale: 0.2,
+        opacity: 0,
+        y: -150,
+      },
+      "+=0.7"
+    )
+    .from(
+      ".elif1",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .from(
+      ".elif2",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: 50,
+      },
+      "+=0.1"
+    )
+    .from(
+      ".elif3",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: 50,
+      },
+      "+=0.1"
+    )
+    .from(
+      ".elif4",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: 50,
+      },
+      "+=0.1"
+    )
+    .to(
+      ".elif1 ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=2.5"
+    )
+    .to(
+      ".elif2 ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+    .to(
+      ".elif3 ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+    .to(
+      ".elif4 ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+    .staggerFromTo(
+      ".baloons img",
+      2.5,
+      {
+        opacity: 0.9,
+        y: 1400,
+      },
+      {
+        opacity: 1,
+        y: -1000,
+      },
+      0.2
+    )
+    .from(
+      ".uykucu",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".uykucuPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".uykucu",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".uykucuPhoto ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+
+    .from(
+      ".komik",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".komikPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".komik",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".komikPhoto ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+
+    .from(
+      ".neseli",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".neseliPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".neseli",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".neseliPhoto ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+
+    .from(
+      ".kulturlu",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".kulturluPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".kulturlu",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".kulturluPhoto ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+    .from(
+      ".romantik",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".romantikPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".romantik",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".romantikPhoto ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+    .from(
+      ".dindar",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".dindarPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".dindar",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".dindarPhoto ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+    .from(
+      ".acikmis",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".acikmisPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".acikmis",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".acikmisPhoto ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+    .from(
+      ".yikik",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".yikikPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".yikik",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".yikikPhoto ",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+
+    .from(
+      ".alkolik",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".alkolikPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".alkolik",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".alkolikPhoto",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+
+    .from(
+      ".karizmatik",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".karizmatikPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".karizmatik",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".karizmatikPhoto",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+
+    .from(
+      ".prenses",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".prensesPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".prenses",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".prensesPhoto",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+
+    .from(
+      ".guzel",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=1"
+    )
+    .from(
+      ".guzelPhoto",
+      1,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.5"
+    )
+    .to(
+      ".guzel",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+    .to(
+      ".guzelPhoto",
+      0.5,
+      {
+        scale: 1.5,
+        opacity: 0,
+        x: 50,
+        y: -50,
+        rotationZ: -45,
+      },
+      "+=0.1"
+    )
+    .from(".three", 0.5, {
+      scale: 3.5,
+      opacity: 0,
+      x: 25,
+      y: -25,
+      rotationZ: -45,
+    })
+    .to(
+      ".three",
+      0.7,
+      {
+        opacity: 0,
+        y: 10,
+      },
+      "+=3.5"
+    )
+
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
     .to(
       ".last-smile",
