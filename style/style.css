@@ -15,6 +15,7 @@ body {
   visibility: hidden;
   position: relative;
   overflow: hidden;
+  background-color: #c66053;
 }
 
 .wrapper {
@@ -27,6 +28,7 @@ body {
   position: relative;
   top: 20vh;
   background-color: red;
+  font-size: x-large;
 }
 
 .container div.six {

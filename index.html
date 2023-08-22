@@ -16,19 +16,26 @@
   <body>
     <div class="wrapper">
       <button class="button" id="startMessage">
-        Sayfaya tıkladığınızda animasyonlar başlayacak!
+        BAŞLAMAK İÇİN BURAYA TIKLA
       </button>
     </div>
 
     <script>
       document.addEventListener("DOMContentLoaded", function (event) {
-        // Müziği çalmak için Howler.js ile Howl nesnesi oluşturun
         var sound = new Howl({
           src: ["music.mp3"],
         });
 
-        // Sayfa yüklendiğinde otomatik olarak müziği çal
         sound.play();
+
+        sound.on("end", function () {
+          replayMusic();
+        });
+
+        function replayMusic() {
+          sound.stop();
+          sound.play();
+        }
       });
     </script>
     <div class="container">
@@ -246,21 +253,21 @@
         </h1>
       </div>
       <div class="one">
-        <p class="two" data-node-name="greetingText">Seni Seviyorum</p>
+        <p class="two">Seni Seviyorum</p>
         <h1 class="one">
-          <span data-node-name="greeting">Hayatımdaki en değerli insana</span>
+          <span>Hayatımdaki en değerli insana</span>
         </h1>
-        <p class="two" data-node-name="greetingText">Seni Seviyorum</p>
+        <p class="two">Seni Seviyorum</p>
       </div>
       <div class="three">
-        <p data-node-name="text1"></p>
+        <p>
+          Senin 1001 halin ve her haline tutuklu bir ben \n Seni çok seviyorum
+        </p>
       </div>
       <div class="four">
         <div class="text-box">
-          <p class="hbd-chatbox" data-node-name="textInChatBox">
-            Mutluluk nedir ?
-          </p>
-          <p class="fake-btn" data-node-name="sendButtonLabel">Send</p>
+          <p class="hbd-chatbox">Mutluluk nedir ?</p>
+          <p class="fake-btn">Google'da Ara</p>
         </div>
       </div>
       <div class="six-1">
@@ -302,16 +309,11 @@
       </div>
 
       <div class="six">
-        <img
-          src="img/elif.jpeg"
-          alt=""
-          class="elif-hat"
-          data-node-name="imagePath"
-        />
+        <img src="img/elif.jpeg" alt="" class="elif-hat" />
         <img src="img/hat.svg" alt="" class="hat" />
         <div class="wish">
-          <h3 class="wish-hbd" data-node-name="wishHeading"></h3>
-          <h5 data-node-name="wishText"></h5>
+          <h3 class="wish-hbd">MutluYıllarSevgilim</h3>
+          <h5>Hayat karşına daima huzur ve mutluluk çıkartsın.</h5>
         </div>
       </div>
       <div class="seven">
@@ -381,10 +383,8 @@
         </svg>
       </div>
       <div class="nine">
-        <p id="replay" data-node-name="replayText">
-          TEKRAR İZLEMEK İSTERSEN BURAYA TIKLA
-        </p>
-        <p class="last-smile" data-node-name="outroSmiley">:)</p>
+        <p id="replay">TEKRAR İZLEMEK İSTERSEN BURAYA TIKLA</p>
+        <p class="last-smile">:)</p>
       </div>
     </div>
   </body>
