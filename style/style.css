@@ -28,7 +28,7 @@ body {
   width: 400px;
   position: relative;
   top: 20vh;
-  background-color: red;
+  background-color: lightslategrey;
   font-size: x-large;
 }
 
@@ -386,6 +386,12 @@ body {
   text-transform: uppercase;
 }
 
+.wish-hbd2 {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
 .wish h5 {
   font-weight: lighter;
   font-size: 2rem;
@@ -428,6 +434,113 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .acikmisPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .dindarPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .romantikPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .kulturluPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .neseliPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .komikPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .uykucuPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .three {
+    margin-top: -20%;
+  }
+  .prensesPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .karizmatikPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .alkolikPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+
+  .yikikPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+  }
+  .guzel h1 {
+    margin-top: -20%;
+  }
+
+  .guzelPhoto img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+  }
+  .six-1 {
+    width: 120%;
+    margin-left: 5%;
+  }
+  .six-2 {
+    width: 120%;
+    margin-left: -7%;
+  }
+  .six-3 {
+    width: 120%;
+    margin-left: 5%;
+  }
+  .six-4 {
+    width: 120%;
+    margin-left: -7%;
+  }
+  .one {
+    margin-top: -7%;
+    font-size: 3.5rem;
+  }
+  .two {
+    margin-top: -7%;
+  }
+  .zero5 {
+    margin-top: -80px;
+    font-size: x-large;
+  }
   .container {
     width: 90%;
   }
@@ -442,6 +555,7 @@ body {
   }
 
   .six .hat {
+    margin-left: -0.5%;
     width: 50px;
     top: -20px;
   }

@@ -12,12 +12,16 @@ document.addEventListener("DOMContentLoaded", function (event) {
 const animationTimeline = () => {
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
+  const hbd2 = document.getElementsByClassName("wish-hbd")[1];
 
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
     .split("")
     .join("</span><span>")}</span`;
 
   hbd.innerHTML = `<span>${hbd.innerHTML
+    .split("")
+    .join("</span><span>")}</span`;
+  hbd2.innerHTML = `<span>${hbd2.innerHTML
     .split("")
     .join("</span><span>")}</span`;
 
@@ -897,7 +901,7 @@ const animationTimeline = () => {
         opacity: 0,
         y: 10,
       },
-      "+=3.5"
+      "+=8.5"
     )
 
     .staggerFrom(".nine p", 1, ideaTextTrans, 1.2)
